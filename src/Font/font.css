@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Anjomanlight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/Anjoman-FaNum-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Anjomanmedium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../Font/Anjoman-FaNum-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Anjoman";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/Anjoman-FaNum-Regular.woff") format("woff");
+}

@@ -1,0 +1,2430 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HamiranSteel-HamiAliazhAsia</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- #region-header -->
+    <header class="flex flex-col hidden lg:flex">
+      <div class="bg-white-400 h-[50px] flex">
+        <div class="container mx-auto flex items-center">
+          <nav class="flex flex-2 wide:flex-3">
+            <ul
+              class="flex gap-[20px] desktop:gap-[10px] mobile:gap-[5px] text-[16px]"
+            >
+              <li><a href="#">فولاد حامیران</a></li>
+              <li><a href="#">آهن‌آلات ساختمانی</a></li>
+              <li><a href="#">فولاد‌آلیاژی</a></li>
+              <li><a href="#">انواع ورق</a></li>
+              <li><a href="#">استیل</a></li>
+              <li><a href="#">اره‌نواری‌وتیغ‌اره</a></li>
+              <li><a href="#">جوش‌وبرش</a></li>
+              <li><a href="#">خدمات</a></li>
+            </ul>
+          </nav>
+
+          <div class="flex flex-1 space-x-1.5">
+            <div class="bgcolor3 p-[5px] rounded-[4px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-search-icon lucide-search"
+              >
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
+              </svg>
+            </div>
+            <div class="bgcolor3 p-[5px] rounded-[4px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user-round-icon lucide-user-round"
+              >
+                <circle cx="12" cy="8" r="5" />
+                <path d="M20 21a8 8 0 0 0-16 0" />
+              </svg>
+            </div>
+            <div class="bgcolor3 p-[5px] rounded-[4px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-phone-icon lucide-phone"
+              >
+                <path
+                  d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bgcolor1 h-[50px] flex">
+        <div class="flex container mx-auto items-center relative">
+          <nav class="flex flex-2 wide:flex-3">
+            <ul
+              class="flex gap-[20px] desktop:gap-[10px] text-[16px] text-white"
+            >
+              <li><a href="#">درباره‌ما</a></li>
+              <li><a href="#">تماس با‌ما</a></li>
+              <li><a href="#">نمایندگی‌ها</a></li>
+              <li><a href="#">مزایده و مناقصه</a></li>
+              <li><a href="#">استخدام</a></li>
+              <li><a href="#">بلاگ</a></li>
+            </ul>
+          </nav>
+          <div class="flex flex-1">
+            <button class="bgcolor-btn px-[25px] py-[4px] rounded-[4px]">
+              کاتالوگ
+            </button>
+          </div>
+          <div
+            class="logo bgcolor3 absolute left-0 h-[200%] top-[-100%] flex items-center p-7"
+          >
+            <img
+              src="./src/header/img/logo.png"
+              width="168.88px"
+              height="55px"
+              alt=""
+              class="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- هدر ریسپانسیو با ساید‌دراور موبایل -->
+    <!-- ۱. موبایل و تبلت: Drawer -->
+    <header class="drawer sticky top-0 z-50 lg:hidden bg-amber-600">
+      <!-- چک‌باکس کنترل‌کنندهٔ Drawer -->
+      <input id="mobile-drawer" type="checkbox" class="drawer-toggle" />
+
+      <!-- محتوای اصلی صفحه (هدر کوچک موبایل) -->
+      <div class="drawer-content bg-white h-[90px]">
+        <div class="navbar flex w-full">
+          <!-- دکمهٔ همبرگر -->
+          <div class="navbar-start w-full flex justify-between items-center">
+            <img
+              src="./src/header/img/logo.png"
+              width="200px"
+              height="auto"
+              alt=""
+            />
+            <label for="mobile-drawer" class="p-[10px] cursor-pointer">
+              <!-- آیکون -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu"
+              >
+                <path d="M4 12h16" />
+                <path d="M4 18h16" />
+                <path d="M4 6h16" />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- بخش سایدبار -->
+      <div class="drawer-side">
+        <!-- کلیک روی overlay سایدبار را می‌بندد -->
+        <label for="mobile-drawer" class="drawer-overlay"></label>
+
+        <div
+          class="menu p-4 w-[90%] min-h-full bg-base-200 text-base-content mobile-header-content bg-white z-[9994]"
+        >
+          <div class="mobile-header flex flex-col gap-[10px] p-[30px]">
+            <label
+              for="mobile-drawer"
+              class="w-full flex justify-end cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="black"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-x-icon lucide-circle-x"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m15 9-6 6" />
+                <path d="m9 9 6 6" />
+              </svg>
+            </label>
+
+            <hr class="border-gray-300" />
+            <div class="mobile-header-links">
+              <label
+                href="#"
+                for="drawer-sub"
+                class="flex justify-between py-[10px] text-[22px] cursor-pointer"
+                >فولاد آلیاژی
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+                <div
+                  class="drawer fixed p-4 w-[90%] top-0 right-0 h-full lg:hidden z-[9995]"
+                >
+                  <!-- Toggle زیرمنو -->
+                  <input
+                    id="drawer-sub"
+                    type="checkbox"
+                    class="drawer-toggle"
+                  />
+
+                  <!-- سایدبار زیرمنو -->
+                  <div class="drawer-side z-[9994]">
+                    <!-- z-50 تا بالاتر از اصلی باشد -->
+                    <label for="drawer-sub" class="drawer-overlay"></label>
+
+                    <div
+                      class="menu p-4 w-[90%] min-h-full bg-base-200 text-base-content mobile-header-content bg-white"
+                    >
+                      <div
+                        class="mobile-header flex flex-col gap-[10px] p-[30px]"
+                      >
+                        <label
+                          for="drawer-sub"
+                          class="w-full flex justify-end cursor-pointer"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="48"
+                            height="48"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="black"
+                            stroke-width="1.25"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-circle-x-icon lucide-circle-x"
+                          >
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="m15 9-6 6" />
+                            <path d="m9 9 6 6" />
+                          </svg>
+                        </label>
+
+                        <hr class="border-gray-300" />
+                        <div class="mobile-header-links">
+                          <label
+                            href="#"
+                            for="drawer-sub"
+                            class="flex justify-between py-[10px] text-[22px] cursor-pointer"
+                          >
+                            ایزار سردکار
+                          </label>
+                          <a
+                            href="#"
+                            class="flex justify-between py-[10px] text-[22px]"
+                            >ابزار گرمکار
+                          </a>
+                          <a
+                            href="#"
+                            class="flex justify-between py-[10px] text-[22px]"
+                          >
+                            عملیات حرارتی
+                          </a>
+                          <a
+                            href="#"
+                            class="flex justify-between py-[10px] text-[22px]"
+                          >
+                            ضد زنگ
+                          </a>
+                          <a
+                            href="#"
+                            class="flex justify-between py-[10px] text-[22px]"
+                          >
+                            قالب پلاستیک
+                          </a>
+                        </div>
+                        <hr class="border-gray-300" />
+                        <label class="input w-full border-none">
+                          <svg
+                            class="h-[25px] opacity-50"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                              stroke-width="2.5"
+                              fill="none"
+                              stroke="currentColor"
+                            >
+                              <circle cx="11" cy="11" r="8"></circle>
+                              <path d="m21 21-4.3-4.3"></path>
+                            </g>
+                          </svg>
+                          <input
+                            type="search"
+                            class="grow text-[22px]"
+                            placeholder="جستجو ..."
+                          />
+                        </label>
+                        <hr class="border-gray-300" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <a href="#" class="flex justify-between py-[10px] text-[22px]"
+                >آهن‌آلات ساختمانی
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </a>
+              <a href="#" class="flex justify-between py-[10px] text-[22px]"
+                >درباره ما</a
+              >
+              <a href="#" class="flex justify-between py-[10px] text-[22px]"
+                >تماس با ما</a
+              >
+              <a href="#" class="flex justify-between py-[10px] text-[22px]"
+                >نمایندگی‌ها</a
+              >
+              <a href="#" class="flex justify-between py-[10px] text-[22px]"
+                >مزایده و مناقصه</a
+              >
+              <a href="#" class="flex justify-between py-[10px] text-[22px]"
+                >استخدام</a
+              >
+              <a href="#" class="flex justify-between py-[10px] text-[22px]"
+                >بلاگ</a
+              >
+            </div>
+            <hr class="border-gray-300" />
+            <label class="input w-full border-none">
+              <svg
+                class="h-[25px] opacity-50"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                  stroke-width="2.5"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </g>
+              </svg>
+              <input
+                type="search"
+                class="grow text-[22px]"
+                placeholder="جستجو ..."
+              />
+            </label>
+            <hr class="border-gray-300" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- #endregion -->
+
+    <!-- #region-slider -->
+    <div class="w-full bgcolor2 px-2 py-[70px]">
+      <div class="container mx-auto flex flex-col gap-[30px]">
+        <div class="banner-title flex flex-col">
+          <h1 class="text-[36px] text-white text-center font-[Anjomanmedium]">
+            فولاد حامیران
+          </h1>
+          <p
+            class="text-white text-center font-[500] text-[24px] font-[Anjomanlight]"
+          >
+            ارائه دهنده سبد کاملی از محصولات و خدمات مورد نیاز صنعت
+          </p>
+        </div>
+        <div class="main-category flex flex-col gap-[20px]">
+          <div class="swiper mycategory">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bgcolor3 py-[33px] rounded-[6px]">
+                <img src="./src/img/P1 1.png" alt="" />
+
+                <h3
+                  class="text-center font-[anjomanmedium] font-[700] lg:text-[18px] text-[22px]"
+                >
+                  فولاد آلیاژی
+                </h3>
+              </div>
+              <div class="swiper-slide bgcolor3 py-[33px] rounded-[6px]">
+                <img src="./src/img/P2.png" alt="" />
+
+                <h3
+                  class="text-center font-[anjomanmedium] font-[700] text-[22px] lg:text-[18px]"
+                >
+                  آهن‌آلات صنعتی و ساختمانی
+                </h3>
+              </div>
+              <div class="swiper-slide bgcolor3 py-[33px] rounded-[6px]">
+                <img src="./src/img/P3.png" alt="" />
+
+                <h3
+                  class="text-center font-[anjomanmedium] font-[700] text-[22px] lg:text-[18px]"
+                >
+                  دستگاه و تیغه اره نواری
+                </h3>
+              </div>
+              <div class="swiper-slide bgcolor3 py-[33px] rounded-[6px]">
+                <img src="./src/img/P7-removebg-preview.png" alt="" />
+
+                <h3
+                  class="text-center font-[anjomanmedium] font-[700] lg:text-[18px] text-[22px]"
+                >
+                  تجهیزات جوشکاری
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="services flex gap-[20px]">
+            <div class="flex flex-1 bgcolor3 p-3 rounded-[6px]">
+              <div class="img-service">
+                <img src="./src/img/P5.png" width="100%" height="100%" alt="" />
+              </div>
+              <div class="title-service flex flex-col justify-center gap-3">
+                <h3 class="font-[anjomanmedium] font-[700] text-[22px]">
+                  خدمات آزمایشگاهی
+                </h3>
+                <p class="text-[16px]">
+                  آزمایشگاه اندیشه بنیان حامی دارای گواهینامه 17025
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-1 bgcolor3 p-3 rounded-[6px]">
+              <div class="img-service">
+                <img src="./src/img/P6.png" width="100%" height="100%" alt="" />
+              </div>
+              <div class="title-service flex flex-col justify-center gap-3">
+                <h3 class="font-[anjomanmedium] font-[700] text-[22px]">
+                  خدمات فلزی
+                </h3>
+                <p class="text-[16px]">
+                  مشاوره، حمل و نقل، خدمات برش و تعمیرات اره نواری
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bernd">
+            <div class="swiper mybrand">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide bgcolor3 py-[22px] rounded-[6px]">
+                  <img src="./src/img/berand icon/Artboard-11.webp" alt="" />
+
+                  <h3>الکترود آما</h3>
+                </div>
+                <div class="swiper-slide bgcolor3 py-[22px] rounded-[6px]">
+                  <img src="./src/img/berand icon/Artboard-8.webp" alt="" />
+
+                  <h3>فولاد کویر کاشان</h3>
+                </div>
+                <div class="swiper-slide bgcolor3 py-[22px] rounded-[6px]">
+                  <img src="./src/img/berand icon/بوهلر.webp" alt="" />
+
+                  <h3>بهلر اتریش</h3>
+                </div>
+                <div class="swiper-slide bgcolor3 py-[22px] rounded-[6px]">
+                  <img
+                    src="./src/img/berand icon/فولاد-آلیاژی-اصفهان.webp"
+                    alt=""
+                  />
+
+                  <h3>فولاد آلیاژی اصفهان</h3>
+                </div>
+                <div class="swiper-slide bgcolor3 py-[22px] rounded-[6px]">
+                  <img
+                    src="./src/img/berand icon/فولاد-آلیاژی-ایران.webp"
+                    alt=""
+                  />
+
+                  <h3>فولاد آلیاژی ایران</h3>
+                </div>
+                <div class="swiper-slide bgcolor3 py-[22px] rounded-[6px]">
+                  <img src="./src/img/berand icon/کسمک.webp" alt="" />
+
+                  <h3>کسمک ترکیه</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region-banner&slider&Competitive advantages -->
+    <div class="container flex flex-col gap-5 mx-auto px-2 py-[70px]">
+      <div class="flex flex-col lg:flex-row items-stretch gap-4">
+        <div class="w-full lg:w-2/3 rounded flex">
+          <div class="swiper myslider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="rounded-[8px]"
+                  src="./src/img/slider/1024-371.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="rounded-[8px]"
+                  src="./src/img/slider/sale.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="flex flex-row lg:flex-col gap-4 w-full lg:w-1/3">
+          <div class="bg-gray-700 rounded-[8px] overflow-hidden">
+            <img src="./src/img/slider/برش لیزری.jpg" alt="" />
+          </div>
+          <div class="bg-gray-700 rounded-[8px] overflow-hidden">
+            <img src="./src/img/slider/خدمات رول به شیت.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="advantages flex flex-wrap lg:flex-nowrap justify-between items-center gap-2"
+      >
+        <div
+          class="flex w-[45%] lg:w-1/4 items-center justify-start p-3 border-2 border-gray-300 rounded-[8px]"
+        >
+          <div>
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 30C5 20.5719 5 15.8579 7.92893 12.9289C10.8579 10 15.5719 10 25 10H35C44.4281 10 49.1421 10 52.0711 12.9289C55 15.8579 55 20.5719 55 30V35C55 44.4281 55 49.1421 52.0711 52.0711C49.1421 55 44.4281 55 35 55H25C15.5719 55 10.8579 55 7.92893 52.0711C5 49.1421 5 44.4281 5 35V30Z"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M17.5 10V6.25"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M42.5 10V6.25"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="41.25"
+                cy="41.25"
+                r="3.75"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M6.25 22.5H53.75"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="content flex flex-col">
+            <span class="font-[anjomanmedium] font-bold text-[16px]"
+              >+50 سال تجربه</span
+            >
+            <p class="text-[12px]">در صنعت آهن و فولاد</p>
+          </div>
+        </div>
+        <div
+          class="flex w-[45%] lg:w-1/4 items-center justify-start gap-[10px] p-3 border-2 border-gray-300 rounded-[8px]"
+        >
+          <div>
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="30" cy="15" r="10" stroke="black" stroke-width="3" />
+              <path
+                d="M45 22.5C49.1421 22.5 52.5 19.7018 52.5 16.25C52.5 12.7982 49.1421 10 45 10"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M15 22.5C10.8579 22.5 7.5 19.7018 7.5 16.25C7.5 12.7982 10.8579 10 15 10"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <ellipse
+                cx="30"
+                cy="42.5"
+                rx="15"
+                ry="10"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M50 47.5C54.3856 46.5383 57.5 44.1027 57.5 41.25C57.5 38.3973 54.3856 35.9617 50 35"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M10 47.5C5.61438 46.5383 2.5 44.1027 2.5 41.25C2.5 38.3973 5.61438 35.9617 10 35"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="content flex flex-col">
+            <span class="font-[anjomanmedium] font-bold text-[16px]"
+              >+800 کارمند مجرب</span
+            >
+            <p class="text-[12px]">از سراسر ایران</p>
+          </div>
+        </div>
+        <div
+          class="flex w-[45%] lg:w-1/4 items-center justify-start gap-[10px] p-3 border-2 border-gray-300 rounded-[8px]"
+        >
+          <div>
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27.1532 8.40838C28.4198 6.13613 29.0531 5 30 5C30.9469 5 31.5802 6.13612 32.8468 8.40837L33.1745 8.99623C33.5345 9.64193 33.7144 9.96479 33.9951 10.1778C34.2757 10.3908 34.6251 10.4699 35.3241 10.628L35.9605 10.772C38.4201 11.3286 39.65 11.6068 39.9426 12.5477C40.2352 13.4886 39.3968 14.4691 37.7199 16.4299L37.2861 16.9372C36.8096 17.4944 36.5713 17.773 36.4641 18.1177C36.357 18.4624 36.393 18.8341 36.465 19.5776L36.5306 20.2544C36.7841 22.8706 36.9109 24.1787 36.1449 24.7602C35.3788 25.3417 34.2273 24.8115 31.9243 23.7512L31.3285 23.4768C30.6741 23.1755 30.3469 23.0248 30 23.0248C29.6531 23.0248 29.3259 23.1755 28.6715 23.4768L28.0757 23.7512C25.7727 24.8115 24.6212 25.3417 23.8551 24.7602C23.0891 24.1787 23.2159 22.8706 23.4694 20.2544L23.535 19.5776C23.607 18.8341 23.643 18.4624 23.5359 18.1177C23.4287 17.773 23.1904 17.4944 22.7139 16.9372L22.2801 16.4299C20.6032 14.4691 19.7648 13.4886 20.0574 12.5477C20.35 11.6068 21.5799 11.3286 24.0395 10.772L24.6759 10.628C25.3749 10.4699 25.7243 10.3908 26.0049 10.1778C26.2856 9.96479 26.4655 9.64194 26.8255 8.99623L27.1532 8.40838Z"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M48.5766 19.2042C49.2099 18.0681 49.5266 17.5 50 17.5C50.4734 17.5 50.7901 18.0681 51.4234 19.2042L51.5873 19.4981C51.7672 19.821 51.8572 19.9824 51.9975 20.0889C52.1378 20.1954 52.3126 20.235 52.6621 20.314L52.9802 20.386C54.2101 20.6643 54.825 20.8034 54.9713 21.2739C55.1176 21.7443 54.6984 22.2345 53.86 23.215L53.643 23.4686C53.4048 23.7472 53.2857 23.8865 53.2321 24.0589C53.1785 24.2312 53.1965 24.4171 53.2325 24.7888L53.2653 25.1272C53.3921 26.4353 53.4554 27.0894 53.0724 27.3801C52.6894 27.6709 52.1137 27.4058 50.9622 26.8756L50.6643 26.7384C50.337 26.5878 50.1734 26.5124 50 26.5124C49.8266 26.5124 49.663 26.5878 49.3357 26.7384L49.0378 26.8756C47.8863 27.4058 47.3106 27.6709 46.9276 27.3801C46.5446 27.0894 46.6079 26.4353 46.7347 25.1272L46.7675 24.7888C46.8035 24.4171 46.8215 24.2312 46.7679 24.0589C46.7143 23.8865 46.5952 23.7472 46.357 23.4686L46.14 23.215C45.3016 22.2345 44.8824 21.7443 45.0287 21.2739C45.175 20.8034 45.7899 20.6643 47.0198 20.386L47.3379 20.314C47.6874 20.235 47.8622 20.1954 48.0025 20.0889C48.1428 19.9824 48.2328 19.821 48.4127 19.4981L48.5766 19.2042Z"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M8.57658 19.2042C9.20991 18.0681 9.52657 17.5 10 17.5C10.4734 17.5 10.7901 18.0681 11.4234 19.2042L11.5873 19.4981C11.7672 19.821 11.8572 19.9824 11.9975 20.0889C12.1378 20.1954 12.3126 20.235 12.6621 20.314L12.9802 20.386C14.2101 20.6643 14.825 20.8034 14.9713 21.2739C15.1176 21.7443 14.6984 22.2345 13.86 23.215L13.643 23.4686C13.4048 23.7472 13.2857 23.8865 13.2321 24.0589C13.1785 24.2312 13.1965 24.4171 13.2325 24.7888L13.2653 25.1272C13.3921 26.4353 13.4554 27.0894 13.0724 27.3801C12.6894 27.6709 12.1137 27.4058 10.9622 26.8756L10.6643 26.7384C10.337 26.5878 10.1734 26.5124 10 26.5124C9.82657 26.5124 9.66296 26.5878 9.33574 26.7384L9.03784 26.8756C7.88634 27.4058 7.31059 27.6709 6.92757 27.3801C6.54456 27.0894 6.60794 26.4353 6.7347 25.1272L6.76749 24.7888C6.80351 24.4171 6.82152 24.2312 6.76793 24.0589C6.71434 23.8865 6.59521 23.7472 6.35696 23.4686L6.14005 23.215C5.30162 22.2345 4.88241 21.7443 5.02871 21.2739C5.17501 20.8034 5.78993 20.6643 7.01977 20.386L7.33794 20.314C7.68743 20.235 7.86217 20.1954 8.00247 20.0889C8.14278 19.9824 8.23276 19.821 8.41273 19.4981L8.57658 19.2042Z"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M10 53.471H15.6498C18.177 53.471 20.7313 53.7342 23.1908 54.2409C27.5414 55.1373 32.1221 55.2459 36.5174 54.5344C38.6845 54.1836 40.8151 53.6472 42.7437 52.7163C44.4847 51.876 46.6173 50.6915 48.0498 49.3648C49.4803 48.0399 50.97 45.8717 52.0273 44.1769C52.934 42.7235 52.4955 40.9405 51.0613 39.8576C49.4683 38.6547 47.1043 38.655 45.5116 39.8581L40.9936 43.2711C39.2426 44.5938 37.3299 45.8114 35.0514 46.1748C34.7775 46.2185 34.4904 46.2583 34.1909 46.293M34.1909 46.293C34.1007 46.3034 34.0094 46.3134 33.917 46.3229M34.1909 46.293C34.5554 46.2149 34.9173 45.9901 35.2569 45.6937C36.8649 44.2903 36.9666 41.925 35.5714 40.3578C35.2476 39.9942 34.8689 39.691 34.4477 39.4397C27.4543 35.2686 16.5735 38.4455 10 43.1073M34.1909 46.293C34.0997 46.3125 34.0083 46.3229 33.917 46.3229M33.917 46.3229C32.6086 46.4572 31.0779 46.492 29.3794 46.3316"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="content flex flex-col">
+            <span class="font-[anjomanmedium] font-bold text-[16px]"
+              >+1000 سفارش</span
+            >
+            <p class="text-[12px]">مشتریان وفادار حامیران</p>
+          </div>
+        </div>
+        <div
+          class="flex w-[45%] lg:w-1/4 items-center justify-start gap-[10px] p-3 border-2 border-gray-300 rounded-[8px]"
+        >
+          <div>
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="30"
+                cy="25"
+                r="17.5"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M10 41.4058C14.721 46.6805 21.5816 50 29.2175 50C43.4568 50 55 38.4568 55 24.2175C55 16.5816 51.6805 9.72096 46.4058 5"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M17.5 11.3816C18.963 12.7631 21.9767 16.5394 22.3278 20.592C22.656 24.3801 25.067 27.4581 28.75 27.4998C30.1654 27.5158 31.5969 26.4555 31.5932 24.9876C31.5921 24.5337 31.5199 24.0695 31.4068 23.6426C31.2496 23.0487 31.2356 22.3655 31.5625 21.6665C32.706 19.2215 34.9551 18.5647 36.7372 17.2369C37.5276 16.648 38.2487 16.0267 38.5666 15.5263C39.4444 14.1447 40.3221 11.3816 39.8833 10"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M47.5 27.5C46.9511 29.0517 46.5625 33.125 40.3637 33.1897C40.3637 33.1897 34.8743 33.1897 33.2274 36.2931C31.91 38.7759 32.6785 41.4655 33.2274 42.5"
+                stroke="black"
+                stroke-width="3"
+              />
+              <path
+                d="M30 55V50"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M30 55H25"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path
+                d="M35 55H30"
+                stroke="black"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="content flex flex-col">
+            <span class="font-[anjomanmedium] font-bold text-[16px]"
+              >6 شعبه فعال</span
+            >
+            <p class="text-[12px]">تهران، اصفهان، تبریز، همدان و قم</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region abouthamiran -->
+    <div class="w-full bg-white">
+      <div class="about container px-2 mx-auto py-[70px]">
+        <div class="flex flex-col lg:flex-row gap-[15px] justify-between">
+          <div class="flex w-full flex-col justify-between gap-[10px]">
+            <div class="about-title flex flex-1 flex-col gap-0">
+              <h2 class="font-[anjomanmedium] font-bold text-[26px]">
+                درباره حامیران
+              </h2>
+              <span class="text-[22px] font-[anjomanlight] text-[#656565]"
+                >همراه معتمد صنعتگران</span
+              >
+            </div>
+            <div class="about-content flex flex-5 flex-col gap-1">
+              <p class="text-justify">
+                شرکت فولاد حامیران به عنوان مرجعی معتبر در ارائه انواع فولاد
+                آلیاژی، آهن‌آلات صنعتی و ساختمانی، دستگاه‌ اره نواری، تیغ اره‌
+                نواری و ملزومات جوش و برش، از برندهای مطرحی همچون فولاد آلیاژی
+                اصفهان، فولاد آلیاژی ایران، شرکت صنعتی آما، فولاد کویر کاشان،
+                بهلر اتریش و کسمک ترکیه و… فعالیت می‌نماید.
+              </p>
+              <p class="text-justify">
+                در فولاد حامیران، کیفیت نه تنها یک شعار، بلکه یک ارزش اصلی است.
+                ما با پیاده‌سازی سیستم‌های کنترل کیفیت دقیق و استانداردهای
+                بین‌المللی، اطمینان حاصل می‌کنیم که هر محصولی که از خط تولید
+                خارج می‌شود، با بالاترین سطح کیفیت و ایمنی همراه باشد.
+              </p>
+              <p class="text-justify font-[anjomanmedium]">
+                هلدینگ توسعه فولاد حامیران رتبه اول کیفیت و سرعت را در ارائه
+                خدمات و محصولات، با بالاترین سطح رضایت مشتری و سهم بازار در کشور
+                دارد، که به عنوان قابل اعتماد و ارزش آفرین‌ترین شرکت فعال در
+                صنعت شناخته می‌شود.
+              </p>
+            </div>
+            <div class="about-btns flex gap-[10px]">
+              <a
+                href="#"
+                class="flex w-1/2 md:w-1/2 justify-between items-stretch overflow-hidden gap-[50px] bgcolor1 rounded-[4px]"
+              >
+                <button class="text-white p-[10px]">درباره ما</button>
+                <div class="bgcolor-btn flex item-center p-[5px]">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.6666 25.6667L2.33325 25.6667"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M3.5 25.6666V13.2383C3.5 12.2386 3.92752 11.2866 4.67473 10.6224L11.6747 4.40018C13.0008 3.22142 14.9992 3.22142 16.3253 4.40018L23.3253 10.6224C24.0725 11.2866 24.5 12.2386 24.5 13.2383V25.6666"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M11.6667 10.5H16.3334"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M10.5 18.0833H17.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M10.5 21.5833H17.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M21 25.6667V18.6667C21 16.4668 21 15.3668 20.3166 14.6834C19.6332 14 18.5332 14 16.3333 14H11.6667C9.46678 14 8.36684 14 7.68342 14.6834C7 15.3668 7 16.4668 7 18.6667V25.6667"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="flex w-1/2 md:w-1/2 justify-between items-stretch overflow-hidden gap-[50px] bgcolor1 rounded-[4px]"
+              >
+                <button class="text-white p-[10px]">دانلود کاتالوگ</button>
+                <div class="bgcolor-btn flex item-center p-[5px]">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.6666 25.6667L2.33325 25.6667"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M3.5 25.6666V13.2383C3.5 12.2386 3.92752 11.2866 4.67473 10.6224L11.6747 4.40018C13.0008 3.22142 14.9992 3.22142 16.3253 4.40018L23.3253 10.6224C24.0725 11.2866 24.5 12.2386 24.5 13.2383V25.6666"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M11.6667 10.5H16.3334"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M10.5 18.0833H17.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M10.5 21.5833H17.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M21 25.6667V18.6667C21 16.4668 21 15.3668 20.3166 14.6834C19.6332 14 18.5332 14 16.3333 14H11.6667C9.46678 14 8.36684 14 7.68342 14.6834C7 15.3668 7 16.4668 7 18.6667V25.6667"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="flex w-full flex-col gap-[10px]">
+            <img src="./src/img/Group 41077.png" alt="" />
+            <div class="namad flex justify-between gap-[10px]">
+              <div
+                class="flex flex-1 border-1 border-gray-300 items-center justify-center p-[5px] rounded-[8px]"
+              >
+                <img
+                  class="object-contain"
+                  src="./src/img/namad/DaneshBonyan-1 1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-1 border-1 border-gray-300 items-center justify-center p-[5px] rounded-[8px]"
+              >
+                <img
+                  class="object-contain"
+                  src="./src/img/namad/Enamad 1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-1 border-1 border-gray-300 items-center justify-center p-[5px] rounded-[8px]"
+              >
+                <img
+                  class="object-contain"
+                  src="./src/img/namad/NSRLogo 1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-1 border-1 border-gray-300 items-center justify-center p-[5px] rounded-[8px]"
+              >
+                <img
+                  class="object-contain"
+                  src="./src/img/namad/tisu-election-iromart.com-1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-1 border-1 border-gray-300 items-center justify-center p-[5px] rounded-[8px]"
+              >
+                <img
+                  class="object-contain"
+                  src="./src/img/namad/samandehi 1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region-comments -->
+    <div class="container mx-auto px-2 py-[70px]">
+      <div class="comments-section flex flex-col gap-[25px]">
+        <div class="comments-title flex flex-col text-center">
+          <h2 class="font-[anjomanmedium] text-[22px]">تجربه مشتریان</h2>
+          <span class="font-[anjomanlight] text-[18px]">
+            مشتریان ما نبض تپنده فولاد حامیران هستند ...
+          </span>
+        </div>
+        <div class="comments-content relative">
+          <div class="swiper mycomments">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide bg-white p-1 rounded-[8px] border-2 border-gray-300"
+              >
+                <div
+                  class="comment flex items-center justify-center gap-[15px]"
+                >
+                  <div class="coment-user-img flex flex-1">
+                    <img
+                      src="./src/img/comment/teacher.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div class="comment-user-content flex flex-col gap-2 flex-4">
+                    <span class="font-[anjomanmedium] font-bold">
+                      نسترن عباسی – کارشناس تأمین مصالح</span
+                    >
+                    <p>
+                      تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما باعث
+                      شد خرید بسیار مطمئنی داشته باشیم. از تیم پشتیبانی هم
+                      واقعاً راضی بودیم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region-news&blog -->
+
+    <div class="w-full bg-white">
+      <div class="container mx-auto py-[70px]">
+        <div class="blogs-section flex flex-col gap-[25px]">
+          <div class="blogs-title flex flex-col text-center">
+            <h2 class="font-[anjomanmedium] text-[22px]">
+              آخرین مطالب فولاد حامیران
+            </h2>
+            <span class="font-[anjomanlight] text-[18px]">
+              نبض صنعت در دستان شما
+            </span>
+          </div>
+          <div class="blogs-content relative">
+            <div class="tabs tabs-bottom">
+              <input
+                type="radio"
+                name="my_tabs_3"
+                class="tab"
+                aria-label="دانشنامه"
+              />
+              <div class="tab-content bg-base-100 border-base-300 p-6">
+                <div class="swiper myblogs">
+                  <div class="swiper-wrapper">
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+
+              <input
+                type="radio"
+                name="my_tabs_3"
+                class="tab"
+                aria-label="اخبار"
+                checked="checked"
+              />
+              <div class="tab-content bg-base-100 border-base-300 p-6">
+                <div class="swiper myblogs">
+                  <div class="swiper-wrapper">
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog//نقش-نبشی-در-طراحی-مدرن-سازه_های-فولادی-r2jltl5lhwl8byns5pwnx67w5p5v5v3iyvq5l1o774.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-slide p-2 rounded-[8px] border-2 border-gray-300"
+                    >
+                      <div
+                        class="blog flex flex-col items-center justify-center gap-[15px]"
+                      >
+                        <div class="blog-img flex flex-3">
+                          <img
+                            src="./src/img/blog/جوشکاری-لوله-مانیسمان-r20ktiq7mcte7os8mrppajz4a9hvdlc86vocxreeeo.jpg"
+                            class="w-full h-full object-cover"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="blog-title flex flex-col gap-1 flex-1 text-center"
+                        >
+                          <span class="font-[anjomanmedium] font-bold">
+                            جوشکاری لوله مانیسمان
+                          </span>
+                          <p class="text-justify line-clamp-2 text-[12px]">
+                            تنوع محصولات فولادی و مشاوره‌های تخصصی تیم فروش شما
+                            باعث شد خرید بسیار مطمئنی داشته باشیم. از تیم
+                            پشتیبانی هم واقعاً راضی بودیم.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion -->
+    <!-- #region-contactus -->
+    <div class="container mx-auto px-2 py-[70px]">
+      <div class="contact-section flex flex-col gap-[25px]">
+        <div class="contact-title flex flex-col text-center">
+          <h2 class="font-[anjomanmedium] text-[22px]">تماس با حامیران</h2>
+          <span class="font-[anjomanlight] text-[18px]">
+            شعبات شرکت حامی آلیاژ آسیا
+          </span>
+        </div>
+        <div class="contact-content">
+          <div class="contact-branch flex flex-wrap">
+            <div
+              class="contact-branch-main flex flex-1/1 lg:flex-1/2 gap-[10px] items-center justify-between p-[15px] border-4 border-gray-100 bg-white rounded-[8px]"
+            >
+              <div class="contact-branch-icon">
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 21.2866C12.5 12.2918 20.335 5 30 5C39.665 5 47.5 12.2918 47.5 21.2866C47.5 30.2109 41.9146 40.6248 33.2002 44.3489C31.1687 45.217 28.8313 45.217 26.7998 44.3489C18.0854 40.6248 12.5 30.2109 12.5 21.2866Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M35 22.5C35 25.2614 32.7614 27.5 30 27.5C27.2386 27.5 25 25.2614 25 22.5C25 19.7386 27.2386 17.5 30 17.5C32.7614 17.5 35 19.7386 35 22.5Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M52.4013 38.75C54.0647 40.2562 55 41.9539 55 43.75C55 49.9632 43.8071 55 30 55C16.1929 55 5 49.9632 5 43.75C5 41.9539 5.93529 40.2562 7.59867 38.75"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="contact-branch-title flex flex-col gap-[5px] items-start"
+              >
+                <span class="font-[anjomanmedium] font-bold text-[16px]"
+                  >دفتر مرکزی</span
+                >
+                <p class="text-[12px]">
+                  تهران، مهرآباد جنوبی، خیابان 45متری زرند، کوچه امری، مجتمع
+                  تجاری پارسه، پلاک 13
+                </p>
+              </div>
+              <div class="contact-branch-btn flex">
+                <button
+                  class="bg-gray-200 py-[8px] px-[20px] text-[13px] font-bold"
+                >
+                  اطلاعات بیشتر
+                </button>
+                <div class="bg-black px-[6px] flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact-branch-main flex flex-1/1 lg:flex-1/2 gap-[10px] items-center justify-between p-[15px] border-4 border-gray-100 bg-white rounded-[8px]"
+            >
+              <div class="contact-branch-icon">
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 21.2866C12.5 12.2918 20.335 5 30 5C39.665 5 47.5 12.2918 47.5 21.2866C47.5 30.2109 41.9146 40.6248 33.2002 44.3489C31.1687 45.217 28.8313 45.217 26.7998 44.3489C18.0854 40.6248 12.5 30.2109 12.5 21.2866Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M35 22.5C35 25.2614 32.7614 27.5 30 27.5C27.2386 27.5 25 25.2614 25 22.5C25 19.7386 27.2386 17.5 30 17.5C32.7614 17.5 35 19.7386 35 22.5Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M52.4013 38.75C54.0647 40.2562 55 41.9539 55 43.75C55 49.9632 43.8071 55 30 55C16.1929 55 5 49.9632 5 43.75C5 41.9539 5.93529 40.2562 7.59867 38.75"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="contact-branch-title flex flex-col gap-[5px] items-start"
+              >
+                <span class="font-[anjomanmedium] font-bold text-[16px]"
+                  >دفتر مرکزی</span
+                >
+                <p class="text-[12px]">
+                  تهران، مهرآباد جنوبی، خیابان 45متری زرند، کوچه امری، مجتمع
+                  تجاری پارسه، پلاک 13
+                </p>
+              </div>
+              <div class="contact-branch-btn flex">
+                <button
+                  class="bg-gray-200 py-[8px] px-[20px] text-[13px] font-bold"
+                >
+                  اطلاعات بیشتر
+                </button>
+                <div class="bg-black px-[6px] flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact-branch-main flex flex-1/1 lg:flex-1/2 gap-[10px] items-center justify-between p-[15px] border-4 border-gray-100 bg-white rounded-[8px]"
+            >
+              <div class="contact-branch-icon">
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 21.2866C12.5 12.2918 20.335 5 30 5C39.665 5 47.5 12.2918 47.5 21.2866C47.5 30.2109 41.9146 40.6248 33.2002 44.3489C31.1687 45.217 28.8313 45.217 26.7998 44.3489C18.0854 40.6248 12.5 30.2109 12.5 21.2866Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M35 22.5C35 25.2614 32.7614 27.5 30 27.5C27.2386 27.5 25 25.2614 25 22.5C25 19.7386 27.2386 17.5 30 17.5C32.7614 17.5 35 19.7386 35 22.5Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M52.4013 38.75C54.0647 40.2562 55 41.9539 55 43.75C55 49.9632 43.8071 55 30 55C16.1929 55 5 49.9632 5 43.75C5 41.9539 5.93529 40.2562 7.59867 38.75"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="contact-branch-title flex flex-col gap-[5px] items-start"
+              >
+                <span class="font-[anjomanmedium] font-bold text-[16px]"
+                  >دفتر مرکزی</span
+                >
+                <p class="text-[12px]">
+                  تهران، مهرآباد جنوبی، خیابان 45متری زرند، کوچه امری، مجتمع
+                  تجاری پارسه، پلاک 13
+                </p>
+              </div>
+              <div class="contact-branch-btn flex">
+                <button
+                  class="bg-gray-200 py-[8px] px-[20px] text-[13px] font-bold"
+                >
+                  اطلاعات بیشتر
+                </button>
+                <div class="bg-black px-[6px] flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact-branch-main flex flex-1/1 lg:flex-1/2 gap-[10px] items-center justify-between p-[15px] border-4 border-gray-100 bg-white rounded-[8px]"
+            >
+              <div class="contact-branch-icon">
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 21.2866C12.5 12.2918 20.335 5 30 5C39.665 5 47.5 12.2918 47.5 21.2866C47.5 30.2109 41.9146 40.6248 33.2002 44.3489C31.1687 45.217 28.8313 45.217 26.7998 44.3489C18.0854 40.6248 12.5 30.2109 12.5 21.2866Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M35 22.5C35 25.2614 32.7614 27.5 30 27.5C27.2386 27.5 25 25.2614 25 22.5C25 19.7386 27.2386 17.5 30 17.5C32.7614 17.5 35 19.7386 35 22.5Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M52.4013 38.75C54.0647 40.2562 55 41.9539 55 43.75C55 49.9632 43.8071 55 30 55C16.1929 55 5 49.9632 5 43.75C5 41.9539 5.93529 40.2562 7.59867 38.75"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="contact-branch-title flex flex-col gap-[5px] items-start"
+              >
+                <span class="font-[anjomanmedium] font-bold text-[16px]"
+                  >دفتر مرکزی</span
+                >
+                <p class="text-[12px]">
+                  تهران، مهرآباد جنوبی، خیابان 45متری زرند، کوچه امری، مجتمع
+                  تجاری پارسه، پلاک 13
+                </p>
+              </div>
+              <div class="contact-branch-btn flex">
+                <button
+                  class="bg-gray-200 py-[8px] px-[20px] text-[13px] font-bold"
+                >
+                  اطلاعات بیشتر
+                </button>
+                <div class="bg-black px-[6px] flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact-branch-main flex flex-1/1 lg:flex-1/2 gap-[10px] items-center justify-between p-[15px] border-4 border-gray-100 bg-white rounded-[8px]"
+            >
+              <div class="contact-branch-icon">
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 21.2866C12.5 12.2918 20.335 5 30 5C39.665 5 47.5 12.2918 47.5 21.2866C47.5 30.2109 41.9146 40.6248 33.2002 44.3489C31.1687 45.217 28.8313 45.217 26.7998 44.3489C18.0854 40.6248 12.5 30.2109 12.5 21.2866Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M35 22.5C35 25.2614 32.7614 27.5 30 27.5C27.2386 27.5 25 25.2614 25 22.5C25 19.7386 27.2386 17.5 30 17.5C32.7614 17.5 35 19.7386 35 22.5Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M52.4013 38.75C54.0647 40.2562 55 41.9539 55 43.75C55 49.9632 43.8071 55 30 55C16.1929 55 5 49.9632 5 43.75C5 41.9539 5.93529 40.2562 7.59867 38.75"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="contact-branch-title flex flex-col gap-[5px] items-start"
+              >
+                <span class="font-[anjomanmedium] font-bold text-[16px]"
+                  >دفتر مرکزی</span
+                >
+                <p class="text-[12px]">
+                  تهران، مهرآباد جنوبی، خیابان 45متری زرند، کوچه امری، مجتمع
+                  تجاری پارسه، پلاک 13
+                </p>
+              </div>
+              <div class="contact-branch-btn flex">
+                <button
+                  class="bg-gray-200 py-[8px] px-[20px] text-[13px] font-bold"
+                >
+                  اطلاعات بیشتر
+                </button>
+                <div class="bg-black px-[6px] flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="contact-branch-main flex flex-1/1 lg:flex-1/2 gap-[10px] items-center justify-between p-[15px] border-4 border-gray-100 bg-white rounded-[8px]"
+            >
+              <div class="contact-branch-icon">
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 60 60"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 21.2866C12.5 12.2918 20.335 5 30 5C39.665 5 47.5 12.2918 47.5 21.2866C47.5 30.2109 41.9146 40.6248 33.2002 44.3489C31.1687 45.217 28.8313 45.217 26.7998 44.3489C18.0854 40.6248 12.5 30.2109 12.5 21.2866Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M35 22.5C35 25.2614 32.7614 27.5 30 27.5C27.2386 27.5 25 25.2614 25 22.5C25 19.7386 27.2386 17.5 30 17.5C32.7614 17.5 35 19.7386 35 22.5Z"
+                    stroke="black"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M52.4013 38.75C54.0647 40.2562 55 41.9539 55 43.75C55 49.9632 43.8071 55 30 55C16.1929 55 5 49.9632 5 43.75C5 41.9539 5.93529 40.2562 7.59867 38.75"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div
+                class="contact-branch-title flex flex-col gap-[5px] items-start"
+              >
+                <span class="font-[anjomanmedium] font-bold text-[16px]"
+                  >دفتر مرکزی</span
+                >
+                <p class="text-[12px]">
+                  تهران، مهرآباد جنوبی، خیابان 45متری زرند، کوچه امری، مجتمع
+                  تجاری پارسه، پلاک 13
+                </p>
+              </div>
+              <div class="contact-branch-btn flex">
+                <button
+                  class="bg-gray-200 py-[8px] px-[20px] text-[13px] font-bold"
+                >
+                  اطلاعات بیشتر
+                </button>
+                <div class="bg-black px-[6px] flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="2.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                  >
+                    <path d="m15 18-6-6 6-6" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-faq flex justify-between items-stretch flex-wrap">
+            <div class="faq-item flex flex-1/1 lg:flex-1/2">
+              <div class="join join-vertical bg-base-100">
+                <div
+                  class="collapse collapse-arrow join-item border-base-300 border-4"
+                >
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title font-semibold">
+                    چگونه می‌توانم سفارش ثبت کنم؟
+                  </div>
+                  <div class="collapse-content text-sm">
+                    برای ثبت سفارش، ابتدا محصول مورد نظر را از طریق دسته‌بندی‌ها
+                    یا جستجو انتخاب کرده و سپس گزینه «افزودن به سبد خرید» را
+                    بزنید. در نهایت از طریق صفحه سبد خرید، مراحل پرداخت را انجام
+                    دهید.
+                  </div>
+                </div>
+
+                <div
+                  class="collapse collapse-arrow join-item border-gray-100 border-4"
+                >
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title font-semibold">
+                    آیا امکان خرید حضوری وجود دارد؟
+                  </div>
+                  <div class="collapse-content text-sm">
+                    بله، فولاد حامیران امکان خرید حضوری از طریق دفتر مرکزی را
+                    فراهم کرده است. لطفاً برای هماهنگی با کارشناسان فروش تماس
+                    بگیرید.
+                  </div>
+                </div>
+
+                <div
+                  class="collapse collapse-arrow join-item border-gray-100 border-4"
+                >
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title font-semibold">
+                    زمان تحویل سفارش‌ها چقدر است؟
+                  </div>
+                  <div class="collapse-content text-sm">
+                    زمان تحویل بسته به نوع محصول و محل ارسال متغیر است، اما
+                    معمولاً بین ۲ تا ۴ روز کاری زمان می‌برد. سفارش‌های تهران
+                    معمولاً زودتر تحویل داده می‌شوند.
+                  </div>
+                </div>
+
+                <div
+                  class="collapse collapse-arrow join-item border-gray-100 border-4"
+                >
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title font-semibold">
+                    آیا محصولات دارای ضمانت کیفیت هستند؟
+                  </div>
+                  <div class="collapse-content text-sm">
+                    بله، تمامی محصولات فولاد حامیران با ضمانت اصالت و کیفیت عرضه
+                    می‌شوند. همچنین فاکتور رسمی برای تمامی خریدها صادر می‌گردد.
+                  </div>
+                </div>
+
+                <div
+                  class="collapse collapse-arrow join-item border-gray-100 border-4"
+                >
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title font-semibold">
+                    چگونه با کارشناسان فروش تماس بگیرم؟
+                  </div>
+                  <div class="collapse-content text-sm">
+                    شما می‌توانید از طریق شماره تماس درج‌شده در بخش «تماس با ما»
+                    یا از طریق فرم ارتباطی سایت با کارشناسان ما در ارتباط باشید.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="faq-call flex flex-1/1 lg:flex-1/2">
+              <div
+                class="call-item flex flex-1/2 flex-col justify-center items-center gap-[15px] py-[10px] px-[18px] border-4 border-gray-100 bg-white rounded-[8px]"
+              >
+                <img
+                  src="./src/img/Group 77 (1).png"
+                  width="160px"
+                  height="160px"
+                  alt=""
+                />
+                <span class="font-[anjomanmedium] font-[500] text-[22px]"
+                  >تماس با ما</span
+                >
+                <div
+                  class="call-item-number flex flex-col items-center justify-center gap-0 font-[anjomanlight]"
+                >
+                  <span class="text-[16px]" dir="ltr"
+                    >021 <strong class="text-[24px]">63511</strong></span
+                  >
+                  <span class="text-[16px]" dir="ltr">021-62846000</span>
+                  <span>info@hamiransteel.com</span>
+                </div>
+              </div>
+              <div
+                class="call-item flex flex-1/2 flex-col justify-center items-center gap-[15px] py-[10px] px-[18px] border-4 border-gray-100 bg-white rounded-[8px]"
+              >
+                <img
+                  src="./src/img/Group 77 (1).png"
+                  width="160px"
+                  height="160px"
+                  alt=""
+                />
+                <span class="font-[anjomanmedium] font-[500] text-[22px]"
+                  >تماس با ما</span
+                >
+                <div
+                  class="call-item-number flex flex-col items-center justify-center gap-0 font-[anjomanlight]"
+                >
+                  <span class="text-[16px]" dir="ltr"
+                    >021 <strong class="text-[24px]">63511</strong></span
+                  >
+                  <span class="text-[16px]" dir="ltr">021-62846000</span>
+                  <span>info@hamiransteel.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion -->
+    <!-- #region-footer -->
+    <div class="w-full bgcolor1">
+      <div
+        class="container mx-auto px-2 py-[50px] flex flex-col lg:flex-row gap-[50px]"
+      >
+        <div class="flex flex-1 flex-col gap-[30px]">
+          <div class="footer-about-title flex flex-col text-white gap-[15px]">
+            <div class="logo-footer">
+              <img src="./src/header/img/logo.png" width="200px" alt="" />
+            </div>
+            <div class="footer-about-description">
+              <p>
+                شرکت فولاد حامیران به عنوان مرجعی معتبر در ارائه انواع فولاد
+                آلیاژی، آهن‌آلات صنعتی و ساختمانی، دستگاه‌ اره نواری، تیغ اره‌
+                نواری و ملزومات جوش و برش، از برندهای مطرحی همچون فولاد آلیاژی
+                اصفهان، فولاد آلیاژی ایران، شرکت صنعتی آما، فولاد کویر کاشان،
+                بهلر اتریش و کسمک ترکیه و… فعالیت می‌نماید.
+              </p>
+            </div>
+          </div>
+          <div class="footer-namad flex gap-[10px] justify-between">
+            <div
+              class="bg-white flex flex-1/5 items-center justify-center p-[10px] rounded-[8px]"
+            >
+              <img
+                src="./src/img/namad/DaneshBonyan-1 1.png"
+                class="object-contain"
+                width="90px"
+                height="90px"
+                alt=""
+              />
+            </div>
+            <div
+              class="bg-white flex flex-1/5 items-center justify-center p-[10px] rounded-[8px]"
+            >
+              <img
+                src="./src/img/namad/Enamad 1.png"
+                class="object-contain"
+                width="90px"
+                height="90px"
+                alt=""
+              />
+            </div>
+            <div
+              class="bg-white flex flex-1/5 items-center justify-center p-[10px] rounded-[8px]"
+            >
+              <img
+                src="./src/img/namad/NSRLogo 1.png"
+                class="object-contain"
+                width="90px"
+                height="90px"
+                alt=""
+              />
+            </div>
+            <div
+              class="bg-white flex flex-1/5 items-center justify-center p-[10px] rounded-[8px]"
+            >
+              <img
+                src="./src/img/namad/samandehi 1.png"
+                class="object-contain"
+                width="90px"
+                height="90px"
+                alt=""
+              />
+            </div>
+            <div
+              class="bg-white flex flex-1/5 text-center items-center justify-center p-[10px] rounded-[8px]"
+            >
+              <img
+                src="./src/img/namad/tisu-election-iromart.com-1.png"
+                class="object-contain"
+                width="90px"
+                height="90px"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-1 flex-col gap-[30px] justify-end">
+          <div class="footer-menu text-white flex items-center justify-between">
+            <div class="flex flex-col gap-[15px]">
+              <span class="font-[anjomanmedium] font-[500] text-[22px]"
+                >شعبات</span
+              >
+              <div class="flex flex-col gap-1">
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 1
+                </a>
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 2</a
+                >
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 3</a
+                >
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 4</a
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-[15px]">
+              <span class="font-[anjomanmedium] font-[500] text-[22px]"
+                >شعبات</span
+              >
+              <div class="flex flex-col gap-1">
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 1
+                </a>
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 2</a
+                >
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 3</a
+                >
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 4</a
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-[15px]">
+              <span class="font-[anjomanmedium] font-[500] text-[22px]"
+                >شعبات</span
+              >
+              <div class="flex flex-col gap-1">
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 1
+                </a>
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 2</a
+                >
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 3</a
+                >
+                <a href="#" class="text-[16px] hover:text-yellow-500">
+                  شعبه 4</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer-social flex justify-between items-center bgcolor2 p-[20px] rounded-[8px] text-white"
+          >
+            <span class="text-[25px]">شبکه های اجتماعی </span>
+            <div class="flex gap-3">
+              <svg
+                class="hover:fill-amber-400 hover:cursor-pointer transition duration-550 ease-in-out"
+                width="43"
+                height="43"
+                viewBox="0 0 43 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.3498 36.5748C14.973 38.1487 18.1208 39.0231 21.2686 39.0231C30.8869 39.0231 38.7565 31.1535 38.7565 21.5352C38.7565 11.9169 30.8869 4.04736 21.2686 4.04736C11.6503 4.04736 3.78076 11.9169 3.78076 21.5352C3.78076 24.683 4.65515 27.656 6.05418 30.2791L4.55023 36.0606C4.47264 36.3591 4.47535 36.6728 4.55809 36.9698C4.64083 37.2669 4.80066 37.5368 5.02137 37.7522C5.24208 37.9676 5.51582 38.1208 5.81483 38.1962C6.11384 38.2717 6.42749 38.2668 6.72397 38.1819L12.3498 36.5748Z"
+                  stroke="white"
+                  stroke-width="1.57391"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M29.138 26.5156C29.138 26.7989 29.075 27.0909 28.9404 27.3743C28.803 27.667 28.6226 27.9375 28.4052 28.1769C28.0188 28.6019 27.5938 28.9079 27.1111 29.1056C26.639 29.3032 26.1266 29.4046 25.5757 29.4046C24.7713 29.4046 23.9126 29.2157 23.005 28.831C22.0455 28.415 21.1361 27.8917 20.2944 27.2711C19.3789 26.6023 18.5149 25.8658 17.7097 25.0676C16.913 24.2669 16.1782 23.4069 15.5115 22.4951C14.8987 21.6607 14.3803 20.761 13.9655 19.8125C13.5878 18.9119 13.3989 18.055 13.3989 17.2383C13.3989 16.7032 13.4934 16.1925 13.6822 15.7203C13.8711 15.2394 14.1719 14.7987 14.5898 14.4053C15.0935 13.9086 15.6444 13.6655 16.2285 13.6655C16.4488 13.6655 16.6692 13.7127 16.8668 13.8072C17.0714 13.9016 17.2515 14.0433 17.3949 14.2479L19.2241 16.8221C19.364 17.0179 19.469 17.1998 19.5389 17.373C19.6089 17.5373 19.6491 17.7035 19.6491 17.8521C19.6468 18.0505 19.5893 18.2443 19.4829 18.4117C19.3615 18.6165 19.2133 18.8041 19.0423 18.9696L18.4424 19.5922C18.4007 19.633 18.3679 19.6821 18.3463 19.7363C18.3246 19.7905 18.3145 19.8486 18.3165 19.9069C18.3165 19.9681 18.3253 20.0241 18.341 20.0871C18.3637 20.15 18.3882 20.1972 18.4039 20.2445C18.5439 20.505 18.7887 20.8425 19.1367 21.2518C19.4917 21.661 19.8694 22.0789 20.2786 22.4951C20.7053 22.9131 21.1146 23.2978 21.5325 23.6528C21.9417 23.9973 22.281 24.2334 22.5486 24.3751L22.692 24.4398C22.7548 24.4622 22.8212 24.4729 22.8878 24.4713C22.9482 24.4726 23.0081 24.4613 23.0638 24.4381C23.1195 24.4149 23.1698 24.3803 23.2114 24.3366L23.8094 23.7455C24.0071 23.5497 24.1959 23.401 24.3778 23.3048C24.5451 23.1982 24.7391 23.1413 24.9374 23.1404C25.1029 23.1429 25.2664 23.1779 25.4183 23.2436C25.5915 23.3136 25.7733 23.415 25.9692 23.5497L28.5784 25.3999C28.7674 25.5229 28.9178 25.6969 29.0121 25.9018C29.0938 26.0962 29.1366 26.3047 29.138 26.5156Z"
+                  stroke="white"
+                  stroke-width="1.57391"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+              <svg
+                class="hover:fill-amber-400 hover:cursor-pointer transition duration-550 ease-in-out"
+                width="43"
+                height="43"
+                viewBox="0 0 43 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.9577 16.813V21.8845H29.5045C29.8543 21.8845 30.0291 22.2342 30.0291 22.584L29.3296 25.9067C29.3296 26.0815 28.9799 26.2564 28.805 26.2564H24.9577V39.0226H19.7113V26.4313H16.7384C16.3886 26.4313 16.2137 26.2564 16.2137 25.9067V22.584C16.2137 22.2342 16.3886 22.0593 16.7384 22.0593H19.7113V16.2883C19.7113 13.3154 21.9847 11.042 24.9577 11.042H29.6794C30.0291 11.042 30.204 11.2169 30.204 11.5666V15.7637C30.204 16.1135 30.0291 16.2883 29.6794 16.2883H25.4823C25.1325 16.2883 24.9577 16.4632 24.9577 16.813Z"
+                  stroke="white"
+                  stroke-width="1.57391"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M26.7065 39.0231H16.2138C7.46986 39.0231 3.97229 35.5255 3.97229 26.7816V16.2889C3.97229 7.54493 7.46986 4.04736 16.2138 4.04736H26.7065C35.4504 4.04736 38.948 7.54493 38.948 16.2889V26.7816C38.948 35.5255 35.4504 39.0231 26.7065 39.0231Z"
+                  stroke="white"
+                  stroke-width="1.57391"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                class="hover:fill-amber-400 hover:cursor-pointer transition duration-550 ease-in-out"
+                width="43"
+                height="43"
+                viewBox="0 0 43 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.4053 39.0231H26.898C35.6419 39.0231 39.1395 35.5255 39.1395 26.7816V16.2889C39.1395 7.54493 35.6419 4.04736 26.898 4.04736H16.4053C7.66139 4.04736 4.16382 7.54493 4.16382 16.2889V26.7816C4.16382 35.5255 7.66139 39.0231 16.4053 39.0231Z"
+                  stroke="white"
+                  stroke-width="1.57391"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21.6515 27.6556C22.4553 27.6556 23.2512 27.4972 23.9938 27.1896C24.7364 26.882 25.4112 26.4312 25.9795 25.8628C26.5479 25.2945 26.9987 24.6197 27.3063 23.8771C27.6139 23.1345 27.7723 22.3386 27.7723 21.5348C27.7723 20.731 27.6139 19.9351 27.3063 19.1925C26.9987 18.4499 26.5479 17.7752 25.9795 17.2068C25.4112 16.6384 24.7364 16.1876 23.9938 15.88C23.2512 15.5724 22.4553 15.4141 21.6515 15.4141C20.0282 15.4141 18.4714 16.0589 17.3235 17.2068C16.1756 18.3547 15.5308 19.9115 15.5308 21.5348C15.5308 23.1581 16.1756 24.715 17.3235 25.8628C18.4714 27.0107 20.0282 27.6556 21.6515 27.6556Z"
+                  stroke="white"
+                  stroke-width="1.57391"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M31.5078 12.791H31.5288"
+                  stroke="white"
+                  stroke-width="2.09854"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- Swiper JS -->
+    <script src="./src/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mycategory", {
+        spaceBetween: 30,
+        breakpoints: {
+          1320: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          770: {
+            slidesPerView: 2,
+          },
+          220: {
+            slidesPerView: 1,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".mybrand", {
+        spaceBetween: 30,
+        breakpoints: {
+          1320: {
+            slidesPerView: 6,
+          },
+          1024: {
+            slidesPerView: 5, // موبایل
+          },
+          770: {
+            slidesPerView: 3,
+          },
+          220: {
+            slidesPerView: 2,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".myslider", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".mycomments", {
+        spaceBetween: 30,
+        breakpoints: {
+          1024: {
+            slidesPerView: 2,
+          },
+
+          220: {
+            slidesPerView: 1,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".myblogs", {
+        spaceBetween: 30,
+        breakpoints: {
+          1024: {
+            slidesPerView: 4,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
