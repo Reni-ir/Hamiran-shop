@@ -1848,6 +1848,9 @@
   .w-\[45\%\] {
     width: 45%;
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
   .w-\[90\%\] {
     width: 90%;
   }
@@ -1917,6 +1920,9 @@
   }
   .flex-row {
     flex-direction: row;
+  }
+  .flex-nowrap {
+    flex-wrap: nowrap;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -2190,6 +2196,10 @@
   .font-\[500\] {
     --tw-font-weight: 500;
     font-weight: 500;
+  }
+  .font-\[600\] {
+    --tw-font-weight: 600;
+    font-weight: 600;
   }
   .font-\[700\] {
     --tw-font-weight: 700;
