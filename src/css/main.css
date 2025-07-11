@@ -2223,6 +2223,9 @@
   .text-wrap {
     text-wrap: wrap;
   }
+  .\!text-black {
+    color: var(--color-black) !important;
+  }
   .text-\[\#656565\] {
     color: #656565;
   }
