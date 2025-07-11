@@ -2229,6 +2229,9 @@
   .text-base-content {
     color: var(--color-base-content);
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-white {
     color: var(--color-white);
   }
